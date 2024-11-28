@@ -19,11 +19,15 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'Rajdhani', Helvetica, sans-serif;
+  height: 100%;
+  overflow-y:hidden;
 }
 
 html, body {
   overflow-x: hidden;
+  background-color: rgb(2 6 23);
   margin: 0;
+  font-family: 'Rajdhani', Helvetica, sans-serif;
 }
 
 .containerBody{
@@ -114,6 +118,24 @@ html, body {
   background-color: transparent;
   border-right: 2px solid white;
   animation: blink 0.7s steps(2, start) infinite;
+}
+
+.btnCurriculo{
+  border-color: #ededed;
+  border-width: 0.1rem;
+  border-radius: 0.2rem;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.professionalExperience{
+  z-index: 999;
 }
 
 @keyframes typing {
