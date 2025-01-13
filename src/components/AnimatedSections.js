@@ -2,7 +2,7 @@
 import { RiJavascriptFill } from "react-icons/ri";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
-import { SiMysql, SiN8N, SiPrisma } from "react-icons/si";
+import { SiMysql, SiN8N, SiPrisma, SiNextdotjs, SiPhp   } from "react-icons/si";
 import {
   FaGitAlt,
   FaReact,
@@ -10,7 +10,7 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
-import { FaNode, FaCss3Alt } from "react-icons/fa6";
+import { FaNode, FaCss3Alt, FaAws  } from "react-icons/fa6";
 import { TbBrandReactNative } from "react-icons/tb";
 import { useEffect, useState } from "react";
 import { BiCaretRight } from "react-icons/bi";
@@ -239,7 +239,7 @@ export default function AnimatedSections() {
           <h2 className="text-6xl font-bold text-center mb-20  skill-title opacity-0">
             Skills
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-20 mt-6">
+          <div className="grid grid-cols-3 md:grid-cols-5 gap-20 mt-6">
             <div className="skill-card  bg-white text-black p-4 rounded-lg shadow-lg flex items-center justify-center containerSkillCard transition-transform transform hover:scale-105 hover:shadow-xl group ">
               <FaHtml5
                 className="group-hover:text-orange-500 transition-colors"
@@ -312,6 +312,25 @@ export default function AnimatedSections() {
                 size={85}
               />
             </div>
+            <div className="skill-card bg-white text-black p-4 rounded-lg shadow-lg flex items-center justify-center containerSkillCard transition-transform transform hover:scale-105 hover:shadow-xl group ">
+              <SiPhp
+                className="group-hover:text-indigo-800 transition-colors"
+                size={85}
+              />
+            </div>
+            <div className="skill-card bg-white text-black p-4 rounded-lg shadow-lg flex items-center justify-center containerSkillCard transition-transform transform hover:scale-105 hover:shadow-xl group ">
+              <SiNextdotjs
+                className=" transition-colors"
+                size={85}
+              />
+            </div>
+            <div className="skill-card bg-white text-black p-4 rounded-lg shadow-lg flex items-center justify-center containerSkillCard transition-transform transform hover:scale-105 hover:shadow-xl group ">
+              <FaAws
+                className="group-hover:text-amber-600 transition-colors"
+                size={85}
+              />
+            </div>
+             
           </div>
         </div>
         <div className="animate-section h-screen w-full text-white px-10 ">
